@@ -1,5 +1,8 @@
 # Gemfile
 gem 'opal'
 gem 'opal-browser'
-gem 'hyperloop'
 gem 'opal-jquery'
+# gem 'hyper-component'
+gem 'hyper-react'
+# gem 'react-rails'
+gem 'hyperloop-config'

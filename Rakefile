@@ -1,6 +1,4 @@
 require 'opal'
-# require 'opal-jquery'
-require 'hyperloop'
 
 task :build do
    Opal.append_path "app"

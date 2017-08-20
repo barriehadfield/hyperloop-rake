@@ -1,23 +1,26 @@
 
-require 'opal'
+# require 'opal'
 
 # require 'client_and_server'
 # require 'react/react-source-browser'
 # require 'react/react-source-server'
 
-require 'hyper-component'
+# require 'hyper-component'
+# require 'hyper-react'
+# require 'react-rails'
+# require 'hyperloop-config'
 
-if React::IsomorphicHelpers.on_opal_client?
-  require 'opal-jquery'
-  require 'browser'
-  require 'browser/interval'
-  require 'browser/delay'
-end
-
-require 'hyper-model'
-require 'hyper-store'
-require 'hyper-operation'
-require 'reactrb/auto-import'
+# if React::IsomorphicHelpers.on_opal_client?
+  # require 'opal-jquery'
+  # require 'browser'
+  # require 'browser/interval'
+  # require 'browser/delay'
+# end
+#
+# require 'hyper-model'
+# require 'hyper-store'
+# require 'hyper-operation'
+# require 'reactrb/auto-import'
 # require 'hyper-router/react-router-source'
 # require 'hyper-router'
 
@@ -38,8 +41,9 @@ end
 
 module Components
   class Home < Hyperloop::Component
-    render do
+    render(DIV) do
       H1 { "I am here" }
+      BUTTON { "Press me" }.on(:click) { alert "yes" }
     end
   end
 end
